@@ -1,0 +1,248 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		.background{
+			background-image: url("image/shouye/图层0.png");
+			background-color: #fff;
+  			background-repeat: no-repeat;
+			background-size: auto;
+			position:relative;
+		}
+		.box1{
+			width:150px; 
+			margin: auto; 
+			margin-top: 150px;
+			position:absolute; 
+			left:210px; 
+			top:50px;
+			text-align:center;
+		}
+		.box2{
+			background-image: url("image/shouye/底层.png");
+			background-repeat: no-repeat;
+			width:1177px; 
+			height: 720px; 
+			margin-top: 139px;
+			position:absolute; 
+			left:365px; 
+			top:0px;
+			text-align:center;
+		}
+		.box3{
+			background-image: url("image/shouye/右边模块.png");
+			background-repeat: no-repeat;
+			width:255px; 
+			height: 720px; 
+			margin-top: 139px;
+			position:absolute; 
+			left:1540px; 
+			top:0px;
+			text-align:center;
+		}
+		.b1{
+			background: transparent;
+			background-image: url("image/shouye/首页.png");
+			width: 131px;
+			height: 45px;
+			border:none;
+			outline: none;
+		}
+		.b2{
+			background: transparent;
+			background-image: url("image/shouye/巡检设置.png");
+			width: 131px;
+			height: 45px;
+			border:none;
+			outline: none;
+		}
+		.b3{
+			background: transparent;
+			background-image: url("image/shouye/红外热成像.png");
+			width: 131px;
+			height: 45px;
+			border:none;
+			outline: none;
+		}.b4{
+			background: transparent;
+			background-image: url("image/shouye/监控画面.png");
+			width: 131px;
+			height: 45px;
+			border:none;
+			outline: none;
+		}.b5{
+			background: transparent;
+			background-image: url("image/shouye/数据分析.png");
+			width: 131px;
+			height: 45px;
+			border:none;
+			outline: none;
+		}.b6{
+			background: transparent;
+			background-image: url("image/shouye/日志.png");
+			width: 131px;
+			height: 45px;
+			border:none;
+			outline: none;
+		}
+		.b7{
+			background-image: url("image/shouye/退出按钮.png");
+			width: 62px;
+			height: 26px;
+			border:none;
+			outline: none;
+		}
+		.b8{
+			background: transparent;
+			background-image: url("image/shouye/拨号.png");
+			width: 78px;
+			height: 78px;
+			border:none;
+			outline: none;
+			position:absolute; 
+			left:85px; 
+			top:502px;
+		}
+		.time{
+			background: transparent;
+			background-image: url("image/shouye/时间.png");
+			width: 131px;
+			height: 39px;
+			border:none;
+			outline: none;
+			color: white;
+			font-size: 16px;
+			text-align: center;
+			line-height: 39px;
+		}
+		.div-a{
+			background-image: url("image/shouye/实时监控图像.png");
+			position: absolute;
+			left:0px;
+			top:0px;
+			width:205px;
+			height:32px;
+			filter:alpha(Opacity=50);
+			-moz-opacity:0.5;
+			opacity: 0.5
+		}
+		.div-b{
+			background-image: url("image/shouye/红外热感应图像.png");
+			position: absolute;
+			left:0px;
+			top:0px;
+			width:205px;
+			height:32px;
+			filter:alpha(Opacity=50);
+			-moz-opacity:0.5;
+			opacity: 0.5
+		}
+		.div-c{
+			background-image: url("image/shouye/指数.png");
+			position: absolute;
+			right:0px;
+			top:0px;
+			width:150px;
+			height:164px;
+			filter:alpha(Opacity=50);
+			-moz-opacity:0.5;
+			opacity: 0.5
+		}
+		.sc{
+			overflow-x:hidden;
+			background: transparent;
+			width:120px;height:60px;
+			border:none;outline: none;
+			color: white;font-size: 16px;
+			scroll-behavior: auto;
+			
+		}
+	</style>
+	 
+	 <script language="javascript">
+     var t = null;
+    t = setTimeout(time,1000);//开始执行
+    function time(){
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+var d=dt.getDate();
+var day=dt.getDay();
+       	var h=dt.getHours();
+       	var m=dt.getMinutes();
+       	var s=dt.getSeconds();
+if(h<10){h="0"+h;}
+if(m<10){m="0"+m;}
+if(s<10){s="0"+s;}
+       	document.getElementById("timeShow").innerHTML = h+":"+m+":"+s+"";
+       	t = setTimeout(time,1000); //设定定时器，循环执行           
+    }
+  </script>
+	
+	
+</head>
+
+<body class="background">
+	<div class="box1"> <!--左边模块-->
+	    <button class="b1" type="button" onclick="window.location.href='/Users/zhanghanqing/Desktop/新建文件夹 (3)/首页.html'"></button>
+		<br><br>
+		<button class="b2" type="button" onclick="window.location.href='/Users/zhanghanqing/Desktop/新建文件夹 (3)/巡检设置.html'"></button>
+		<br><br>
+		<button class="b3" type="button" onclick="window.location.href='/Users/zhanghanqing/Desktop/新建文件夹 (3)/红外热成像.html'"></button>
+		<br><br>
+		<button class="b4" type="button " onclick="window.location.herf='/Users/zhanghanqing/Desktop/新建文件夹 (3)/监控画面.html'"></button>
+		<br><br>
+		<button class="b5"></button>
+		<br><br>
+		<button class="b6"></button>
+		<br><br><br>
+		<img src="image/shouye/头像.png" alt="头像" width="48px" height="48px">
+		<br>
+		<a style="color: blue;font-size: 16px">欢迎您!</a>
+		<br>
+		<a id="name" style="color: white"></a>
+		<br><br>
+		<script>
+ 		document.getElementById("name").innerHTML='fjha';//用户id显示
+		</script>
+	<button class="b7"></button>
+		<br><br>
+		<div id="timeShow" class="time">
+    </div>
+	</div>
+	<div class="box2"><!--中间模块-->
+		<div style="background: transparent;position: absolute;left:12px;top:19px;width: 564px;height: 671px"><!--实时监控-->
+		<img src="image/shouye/图1.png" alt="监控视频">                                                    <!--监控视频链接插入-->
+			<div class="div-a"></div>
+				<div class="div-c">
+					<div style="position: absolute;right: 15px;top:0px;line-height:27px">
+				<a style="color: white">120℃</a><br><a style="color: white">95%</a>
+					</div>
+					<div style="position: absolute;right:12px;top:90px;color: white">
+					<textarea name="a" class="sc">这里写内容</textarea>
+					</div>
+				</div>
+		</div>
+		<div style="position: absolute;left:588px;top:19px;width: 564px;height: 671px"><!--红外监控-->
+			<img src="image/shouye/图2.png" alt="红外视频">                                    <!--红外监控链接-->
+			<div class="div-b"></div>
+		</div>
+	</div>
+	<div class="box3"><!--右边模块-->
+		<div id="1" style="position: absolute;left:103px;top:70px"> 
+		<img src="image/shouye/正常.png" alt="图标">
+		</div>
+		<div id="2" style="position: absolute;left:103px;top:170px">
+		<img src="image/shouye/异常.png" alt="图标">
+		</div>
+		<div id="3" style="position: absolute;left:103px;top:270px">
+		<img src="image/shouye/正常.png" alt="图标">
+		</div>
+		<div id="4" style="position: absolute;left:103px;top:370px">
+		<img src="image/shouye/正常.png" alt="图标">
+		</div>
+	<button class="b8"></button>                                            <!--通话按钮-->
+	</div>
+</body>
+</html>
